@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Cambria", Cochin, Georgia, Times, 'Times New Roman', serif;
+            overflow-x: hidden;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Pinyon+Script&display=swap');
+
+
+        .Homepage {
+
+            height: 100vh;
+            background-color: white;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .Page1Top {
+            border-bottom: 2px solid rgb(236, 240, 236);
+
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 5px 2%;
+
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px 10px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        a:hover {
+            color: #00704A;
+
+        }
+
+        .Headerend {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .Page1Middle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: auto;
+            padding: 0 2%;
+
+        }
+
+        .Page1cart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .Logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .Mensheader {
+            background-image:linear-gradient(rgb(228, 175, 175),rgb(221, 224, 26));
+            height: 150px;
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 10px;
+
+        }
+
+        .silde {
+            width: 30%;
+            height: 100%;
+
+            display: flex;
+
+        }
+
+        .categories {
+            width: 100%;
+            padding: 30px;
+            font-family: fantasy;
+
+        }
+
+        .catoption {
+            display: block;
+            border: none;
+            border-bottom: 1px solid rgb(207, 204, 204);
+            font-size: 16px;
+
+            padding: 15px;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .empty {
+            width: 50%;
+            height: 100%;
+
+
+        }
+
+
+        .Collectionbox {
+            display: flex;
+            padding-left: 5%;
+            margin-top: 2%;
+            overflow: hidden;
+
+        }
+
+
+
+        .Collection {
+            display: block;
+            width: 100dvw;
+
+
+        }
+
+        .Collection img {
+            width: 100%;
+            height: 290px;
+            padding: 10px 20px;
+
+        }
+
+        .Collection h3 {
+            text-align: center;
+            font-size: 16px;
+
+        }
+
+        .seperate_container {
+            display: flex;
+        }
+
+        .Page6 {
+            padding-top: 8%;
+            width: 100vw;
+            height: 100vh;
+
+            background-image:linear-gradient(rgb(18, 175, 97),rgb(231, 226, 226));
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        .Container4 {
+            display: flex;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .Boxs1 {
+            width: 20%;
+            margin-top: 50Px;
+            margin-right: 100px;
+        }
+
+        .Boxs2 {
+            width: 20%;
+            margin-top: 50Px;
+        }
+
+        .Boxs3 {
+            width: 30%;
+            margin-top: 50Px;
+        }
+
+        .Boxs4 {
+            width: 30%;
+            margin-top: 50Px;
+        }
+
+        .Bot {
+           
+            border: none;
+            color: black;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .Heading {
+            margin-bottom: 40px;
+        }
+
+        .Gray {
+            color: black;
+
+        }
+
+        .Footer {
+            text-align: center;
+            margin-top: 100px;
+            color: black
+        }
+
+        .Formicon {
+            text-align: center;
+        }
+
+        .fa-brands {
+            margin-top: 1 0px;
+        }
+
+        .Formicon i {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Page1Top">
+
+        <div class="Headerstart">
+            <nav>
+                <ul class="HeaderList">
+                    <li><a href="" class="">About Us</a></li>
+                    <li><a href="" class="Headerbut">Privacy</a></li>
+                    <li><a href="" class="Headerbut">FAQ</a></li>
+                    <li><a href="" class="Headerbut">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="Headerend">
+            <nav>
+                <ul class="HeaderList">
+
+                    <li><a href="" class="Headerbut">My Wishlist</a></li>
+                    <li><a href="" class="Headerbut">Track Your Order</a></li>
+
+                </ul>
+            </nav>
+            <div class="Headericon">
+                <i class="fa-brands fa-facebook" style="color: #858585; "></i>
+                <i class="fa-brands fa-instagram" style="color: #858585;"></i>
+                <i class="fa-brands fa-x-twitter" style="color: #858585;"></i>
+                <i class="fa-brands fa-youtube" style="color: #858585;"></i>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="Page1Middle">
+        <div class="Logo">
+
+            <i class="fa-brands fa-monero" style="color: #00704A; font-size: 30px;"></i>
+            <h2 class="LogoName"><span class="Mapmu">Mapmu</span> shop</h2>
+        </div>
+        <div class="page1Nav">
+            <nav>
+                <ul class="MidListNav">
+                    <li>
+                        <a href="index.html" class="MidNav">Home</a>
+                    </li>
+                    <li>
+                        <a href="Men.html" class="MidNav">Mens</a>
+                    </li>
+                    <li>
+                        <a href="Teen.html" class="MidNav">Teens</a>
+                    </li>
+                    <li>
+                        <a href="Accessories.html" class="MidNav">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="baby.html" class="MidNav">Baby collection</a>
+                    </li>
+                    <li>
+                        <a href="" class="MidNav">Pages</a>
+                    </li>
+                    <li>
+                        <a href="" class="MidNav">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Page1cart">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000; font-size:20px; margin-left: 20px;"></i>
+            <a href="Login.html"><i class="fa-regular fa-user" style="color: #000000; font-size:20px; margin-left: 20px;" ></i></a>
+            <i class="fa-solid fa-cart-shopping" style="color: #000000; font-size:20px; margin-left: 20px;"></i>
+        </div>
+
+    </div>
+    <div class="Mensheader">
+        <h1>
+            Accessories Collection
+
+        </h1>
+        <h3>
+            Discover the latest trends in Accessories
+        </h3>
+    </div>
+    <div class="seperate_container">
+        <div class="silde">
+            <div class="empty">
+
+            </div>
+            <div class="categories">
+
+                <h3>CATEGORIES</h3>
+
+                <select name="categories" id="categories" class="catoption">
+                    <option value="">Clothing </option>
+                    <option value="">Coat</option>
+                    <option value="">Jacket</option>
+                    <option value="">Dresses</option>
+                    <option value="">Shirt</option>
+                    <option value="">trouser</option>
+                    <option value="">pants</option>
+                </select>
+                <select name="categories" id="categories" class="catoption">
+                    <option value="">Shoes </option>
+                    <option value="">Coat</option>
+                    <option value="">Jacket</option>
+                    <option value="">Dresses</option>
+                    <option value="">Shirt</option>
+                    <option value="">trouser</option>
+                    <option value="">pants</option>
+                </select>
+                <select name="categories" id="categories" class="catoption">
+                    <option value="">Bags </option>
+                    <option value="">Coat</option>
+                    <option value="">Jacket</option>
+                    <option value="">Dresses</option>
+                    <option value="">Shirt</option>
+                    <option value="">trouser</option>
+                    <option value="">pants</option>
+                </select>
+                <select name="categories" id="categories" class="catoption">
+                    <option value="">Accessories </option>
+                    <option value="">Coat</option>
+                    <option value="">Jacket</option>
+                    <option value="">Dresses</option>
+                    <option value="">Shirt</option>
+                    <option value="">trouser</option>
+                    <option value="">pants</option>
+                </select>
+
+                </select>
+
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="Collection">
+                <div class="Collectionbox">
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc1.jpg" alt="">
+                        <h3 id="boxpage">Formal Tan Shoes
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $39.00
+                        </h3>
+
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc2.jpg" alt="">
+                        <h3 id="boxpage">Formal Black Shoes
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <br> $26.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc3.jpg" alt="">
+                        <h3 id="boxpage">Classic Silver Watch
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <br> $26.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc4.jpg" alt="">
+                        <h3 id="boxpage">Funky Shoes
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $39.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc5.jpg" alt="">
+                        <h3 id="boxpage">Smart Wallet 
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $20.00
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Collection">
+                <div class="Collectionbox">
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc6.jpg" alt="">
+                        <h3 id="boxpage">Tan Loafer
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $32.00
+                        </h3>
+
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc7.jpg" alt="">
+                        <h3 id="boxpage">Leather Watch
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <br> $18.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc8.jpg" alt="">
+                        <h3 id="boxpage">Printed Bow
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <br> $16.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc9.jpg" alt="">
+                        <h3 id="boxpage">Rings
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $9.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc10.jpg" alt="">
+                        <h3 id="boxpage">Sliver Coated chain 
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $11.00
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Collection">
+                <div class="Collectionbox">
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc11.jpg" alt="">
+                        <h3 id="boxpage">Silver Blended Chain
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $13.00
+                        </h3>
+
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc12.jpg" alt="">
+                        <h3 id="boxpage">Silver Double Chain
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <br> $20.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc13.jpg" alt="">
+                        <h3 id="boxpage">Silver Flat Chain
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <br> $21.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc14.jpg" alt="">
+                        <h3 id="boxpage">Chain Bracelet
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $25.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc15.jpg" alt="">
+                        <h3 id="boxpage">Money Wallet
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $20.00
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Collection">
+                <div class="Collectionbox">
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc16.jpg" alt="">
+                        <h3 id="boxpage">Mens Fashion
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $29.00
+                        </h3>
+
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc17.jpg" alt="">
+                        <h3 id="boxpage">White Sneaker
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <br> $30.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc18.jpg" alt="">
+                        <h3 id="boxpage">Printed Sneaker
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <br> $39.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc19.jpg" alt="">
+                        <h3 id="boxpage">Slin Bag
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $25.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc20.jpg" alt="">
+                        <h3 id="boxpage">Duffel Bag
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $99.00
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Collection">
+                <div class="Collectionbox">
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc21.jpg" alt="">
+                        <h3 id="boxpage">Leather Anlog Watch
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $36.00
+                        </h3>
+
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc22.jpg" alt="">
+                        <h3 id="boxpage">Manely Wallet
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <br> $20.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc23.jpg" alt="">
+                        <h3 id="boxpage">Tan Shoes
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <br> $29.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc24.jpg" alt="">
+                        <h3 id="boxpage">Leather Belt
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $49.00
+                        </h3>
+                    </div>
+                    <div class="boxpage2">
+                        <img src="/Accessories/Acc25.jpg" alt="">
+                        <h3 id="boxpage">Tan Glossy Shoes
+                            <br><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: rgb(255, 212, 59);"></i>
+                            <br> $30.00
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Page6" id="Contact">
+
+        <div class="Container4">
+            <div class="Boxs1">
+                <div class="Logo">
+
+                    <i class="fa-brands fa-monero" style="color: #f9fafa; font-size: 40px;"></i>
+                    <h2 class="LogoName"><span class="Mapmu">Mapmu</span> shop</h2>
+                </div>
+                <br>
+                <p class="Gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolore molestias omnis
+                    sapiente quis ab veritatis libero hic voluptatibus iure?</p>
+                <div class="Formicon"><a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"
+                            style="color: #6099fb;font-size:30px;"></i></a><a href="https://www.youtube.com/"><i
+                            class="fa-brands fa-youtube" style="color: #f20202;font-size:30px;"></i></a><a
+                        href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"
+                            style="color: #ff7b00;font-size:30px;"></i></a></div>
+            </div>
+            <div class="Boxs2">
+                <h1 class="Heading">Information</h1>
+                <button class="Bot">About</button><br>
+                <button class="Bot">Service</button><br>
+                <button class="Bot">Terms and Conditions</button><br>
+                <button class="Bot">Become a partner</button><br>
+                <button class="Bot">Best Price Gurantee</button><br>
+                <button class="Bot">Privacy and policy</button>
+            </div>
+            <div class="Boxs3">
+                <h1 class="Heading">Customer Support</h1>
+                <button class="Bot">Payment Option</button><br>
+                <button class="Bot">Booking Tips</button><br>
+                <button class="Bot">How it works</button><br>
+                <button class="Bot">Contact Us</button>
+            </div>
+            <div class="Boxs4">
+                <h1 class="Heading">Have a Questions?</h1>
+                <h4 class="Gray">Address : 203 Fake St. Mountain View, San Francisco, California,USA</h4><br>
+                <h4 class="Gray">PH: +800-488-0134</h4><br>
+                <h4 class="Gray">Mail: MapMu@yourdomain.com</h4>
+            </div>
+        </div>
+        <h4 class="Footer">Copyright © 2025 All rights reserved | This Template is made by Manojkumar</h4>
+    </div>
+</body>
+
+</html>

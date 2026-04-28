@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Cambria", Cochin, Georgia, Times, 'Times New Roman', serif;
+            overflow-x: hidden;
+            color: rgb(12, 12, 12);
+            font-weight: 400;
+            font-size: 17px;
+            font: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Pinyon+Script&display=swap');
+
+
+        .Homepage {
+
+            height: 100vh;
+            background-color: white;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .Page1Top {
+            border-bottom: 2px solid rgb(236, 240, 236);
+
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 5px 2%;
+
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px 10px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        a:hover {
+            color: #00704A;
+
+        }
+
+        .Headerend {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .Page1Middle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: auto;
+            padding: 0 2%;
+
+        }
+
+        .Page1cart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .Logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .Mensheader {
+            background-image: linear-gradient(rgb(243, 113, 243), rgb(238, 208, 228));
+            height: 150px;
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 10px;
+
+        }
+
+        .silde {
+            width: 30%;
+            height: 100%;
+
+            display: flex;
+
+        }
+
+        .categories {
+            width: 100%;
+            padding: 30px;
+            font-family: fantasy;
+
+        }
+
+        .catoption {
+            display: block;
+            border: none;
+            border-bottom: 1px solid rgb(207, 204, 204);
+            font-size: 16px;
+
+            padding: 15px;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .empty {
+            width: 50%;
+            height: 100%;
+
+
+        }
+
+
+        .Collectionbox {
+            display: flex;
+            padding-left: 5%;
+            margin-top: 2%;
+            overflow: hidden;
+
+        }
+
+
+
+        .Collection {
+            display: block;
+            width: 100dvw;
+
+
+        }
+
+        .Collection img {
+            width: 100%;
+            height: 290px;
+            padding: 10px 20px;
+
+        }
+
+        .Collection h3 {
+            text-align: center;
+            font-size: 16px;
+
+        }
+
+        .seperate_container {
+            display: flex;
+        }
+
+        .Page6 {
+            padding-top: 8%;
+            width: 100vw;
+            height: 100vh;
+
+            background-image: linear-gradient(rgb(18, 175, 97), rgb(231, 226, 226));
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        .Container4 {
+            display: flex;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .Boxs1 {
+            width: 20%;
+            margin-top: 50Px;
+            margin-right: 100px;
+        }
+
+        .Boxs2 {
+            width: 20%;
+            margin-top: 50Px;
+        }
+
+        .Boxs3 {
+            width: 30%;
+            margin-top: 50Px;
+        }
+
+        .Boxs4 {
+            width: 30%;
+            margin-top: 50Px;
+        }
+
+        .Bot {
+
+            border: none;
+            color: black;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .Heading {
+            margin-bottom: 40px;
+        }
+
+        .Gray {
+            color: black;
+
+        }
+
+        .Footer {
+            text-align: center;
+            margin-top: 100px;
+            color: black
+        }
+
+        .Formicon {
+            text-align: center;
+        }
+
+        .fa-brands {
+            margin-top: 1 0px;
+        }
+
+        .Formicon i {
+            margin: 10px;
+        }
+
+        .Login {
+            background-image: url(/Logbg.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 80dhw;
+            height: 89.5dvh;
+        }
+
+        .Form {
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            width: 500px;
+            height: 400px;
+            background-color: rgba(241, 222, 222, 0.9);
+            border-radius: 15px;
+        }
+
+        .input {
+            padding: 10px;
+            font: bolder;
+            margin: 20px;
+            width: 90%;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 10px;
+            font-size: 16PX;
+        }
+
+        .Form h3 {
+            margin-top: 40px;
+            color: black;
+            font-size: 20px;
+
+        }
+
+        .Checkbox {
+            padding-left: 40px;
+
+        }
+        .Red{
+            color: #f20202;
+        }
+        button{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Page1Top">
+
+        <div class="Headerstart">
+            <nav>
+                <ul class="HeaderList">
+                    <li><a href="" class="">About Us</a></li>
+                    <li><a href="" class="Headerbut">Privacy</a></li>
+                    <li><a href="" class="Headerbut">FAQ</a></li>
+                    <li><a href="" class="Headerbut">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="Headerend">
+            <nav>
+                <ul class="HeaderList">
+
+                    <li><a href="" class="Headerbut">My Wishlist</a></li>
+                    <li><a href="" class="Headerbut">Track Your Order</a></li>
+
+                </ul>
+            </nav
+            <div class="Headericon">
+                <i class="fa-brands fa-facebook" style="color: #858585; "></i>
+                <i class="fa-brands fa-instagram" style="color: #858585;"></i>
+                <i class="fa-brands fa-x-twitter" style="color: #858585;"></i>
+                <i class="fa-brands fa-youtube" style="color: #858585;"></i>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="Page1Middle">
+        <div class="Logo">
+
+            <i class="fa-brands fa-monero" style="color: #00704A; font-size: 30px;"></i>
+            <h2 class="LogoName"><span class="Mapmu">Mapmu</span> shop</h2>
+        </div>
+        <div class="page1Nav">
+            <nav>
+                <ul class="MidListNav">
+                    <li>
+                        <a href="index.html" class="MidNav">Home</a>
+                    </li>
+                    <li>
+                        <a href="Men.html" class="MidNav">Mens</a>
+                    </li>
+                    <li>
+                        <a href="Teen.html" class="MidNav">Teens</a>
+                    </li>
+                    <li>
+                        <a href="Accessories.html" class="MidNav">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="baby.html" class="MidNav">Baby collection</a>
+                    </li>
+                    <li>
+                        <a href="" class="MidNav">Pages</a>
+                    </li>
+                    <li>
+                        <a href="" class="MidNav">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Page1cart">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000; font-size:20px; margin-left: 20px;"></i>
+            <i class="fa-regular fa-user" style="color: #000000; font-size:20px; margin-left: 20px;"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #000000; font-size:20px; margin-left: 20px;"></i>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="Login">
+        <div class="Confrom">
+            <form action="index.html" class="Form">
+
+                <h3 style="text-align: center;">Login or Signup</h3>
+
+                <input type="tel" placeholder="91+ | Mobile Number" class="input" required>
+                <div class="Checkbox"> <input type="checkbox" required>  By continuing, I agree to the <span class="Red">Terms of
+                        Use</span> & <br><span class="Red">Privacy Policy</span> and I am above 18 years old.
+                </div>
+
+
+                <button type=" submit" class="input">CONTINUE</button><br><br>
+                <h4 style="text-align: center;">Having Trouble in Logging in? <span class="Red">Get Help</span></h4>
+                <h4 style="text-align: center;">Or Connect with Us</h4>
+                <div class="Formicon"><a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"
+                            style="color: #6099fb;font-size:30px;"></i></a><a href="https://www.youtube.com/"><i
+                            class="fa-brands fa-youtube" style="color: #f20202;font-size:30px;"></i></a><a
+                        href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"
+                            style="color: #ff7b00;font-size:30px;"></i></a></div>
+
+            </form>
+        </div>
+    </div>
+</body>

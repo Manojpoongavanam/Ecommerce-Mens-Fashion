@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cambria", Cochin, Georgia, Times, 'Times New Roman', serif;
+overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Pinyon+Script&display=swap');
+
+
+.Homepage {
+
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.Page1Top {
+    border-bottom: 2px solid rgb(236, 240, 236);
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 5px 2%;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 10px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    color: #00704A;
+
+}
+
+.Headerend {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.Page1Middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    padding: 0 2%;
+
+}
+.Page1cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media (max-width:770px) {
+    .page1Nav {
+        display: none;
+        
+    }
+
+    .Page1Middle {
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .Logo{
+        font-size: 15px;
+    }
+   
+    
+
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.sale {
+    background-color: #00704A;
+    padding: 10px;
+    text-align: center;
+    color: #fcfdfd;
+}
+
+.Page1content {
+
+    margin-top: 15%;
+    margin-left: 10%;
+    max-width: 500px;
+  
+
+}    
+.Page1content h2{
+    color: red;
+  font-family:'Clicker Script', Times, serif;
+  padding-left: 25%;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.Page1content h1{
+    font-family:"fantasy";
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600px;
+    font-style: normal;
+    padding-right: 15%;
+}
+.Page1content p{
+    color: rgb(33, 37, 31);
+    font-size: 20px;
+    text-align: center;
+    padding-right: 15%;
+   font-family: "jost",sans-serif;
+}
+.Shopnow{
+    padding: 10px 20px;
+   margin-left: 30%;
+   background-color:#00704A;
+   border: none;
+   color: #fcfdfd;
+} 
+
+.Page1ani  {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: Zoom 0.5s linear forwards ;
+}
+@keyframes Zoom{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+  
+
+
+.Model1 {
+
+width: 100%;
+min-height: 84dvh;
+background-image: url(/portrait-handsome-smiling-stylish-young-man-model-wearing-jeans-clothes-sunglasses-fashion-man.jpg);
+background-position: center;
+background-size: cover;
+overflow: hidden;
+
+}
+
+
+
+.Page2header{
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+.New{
+    text-decoration: none;    
+    color: rgb(245, 5, 5);
+}
+.page2line1{
+    display: flex;
+     justify-content: center;
+}
+.page2line2{
+    display: flex;
+     justify-content: center;
+}
+.Page2container{
+    display: block;
+    width: 100dvw;
+    height: 105dvh;
+ 
+}
+.Page2container img{
+    width: 100%;
+    height: 290px;
+    padding:10px 20px ;
+   
+}
+.Page2container h3{
+    text-align: center;
+    font-size: 16px;
+   
+}
+.boxpage2 i{
+    font-size: 12px;
+}
+
+.boxpage2  {
+    height: 380px;
+    
+
+}
+.boxpage2{
+    transition: transform .2s
+}
+
+.boxpage2:hover {
+transform: scale(1.1);   
+}
+
+.page3{
+
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.page3 h1{
+    padding-top: 1%;
+    padding-bottom: 3%;    
+    margin-left: 40%;
+    color: #00704A;
+   
+}
+
+.circle{ 
+    
+    width: 220px;
+    height: 270px;
+    border-radius: 10px;
+    
+background-image: linear-gradient(rgb(241, 132, 132), rgb(236, 236, 117), rgb(233, 180, 209));
+}
+.circle img{
+    margin: 10px;
+    border-radius: 50%;
+    
+  
+}
+.circle h3{
+    text-align: center;
+   
+}
+.Page4boxs{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.page4 h1{
+    padding-top: 2%;
+    padding-bottom: 3%;    
+    margin-left: 2%;
+    color: #04a56f;
+}
+
+.box{ 
+    
+    width: 220px;
+    height: 250px;
+    background-image: linear-gradient(rgb(110, 187, 114)
+    , rgb(240, 237, 237)70%,#7ae97a );
+    border-radius: 10px;
+}
+.box img{
+    margin: 10px;
+    
+    
+  
+}
+.box h3{
+    text-align: center;
+   
+}
+.Page5boxs{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.page5 h1{
+    padding-top: 2%;
+    padding-bottom: 3%;    
+    margin-left: 2%;
+    color: #00704A;
+}
+.Page6{
+    padding-top: 8%;
+            width: 100vw;
+            height: 100vh;
+            
+            background-image:linear-gradient(rgb(18, 175, 97),rgb(231, 226, 226));
+          
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          
+        }
+        .Container4{
+            display: flex;
+           margin-left: 200px;
+           margin-right: 200px;
+
+        }
+        .Container4 a{
+            text-decoration: none;
+            color: rgb(8, 8, 8);
+        }
+        .Boxs1{
+            width: 20%;
+            margin-top: 50Px;
+            margin-right: 100px;
+        }
+        .Boxs2{
+            width: 20%;
+            margin-top: 50Px;
+        }
+        .Boxs3{
+            width:30%;
+            margin-top: 50Px;
+        }
+        .Boxs4{
+            width: 30%;
+            margin-top: 50Px;
+        }
+        .Bot{
+           background:none;
+           border: none;            
+            color:black;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .Heading{
+            margin-bottom: 40px;
+        }
+        .Gray{
+            color:black ;
+
+        }
+        .Footer{
+            text-align: center;
+            margin-top: 100px;
+              color:black
+        }
+        .Formicon{
+text-align: center;
+        }
+        .fa-brands{
+            margin-top: 1   0px;
+        }
+       .Formicon i{
+        margin: 10px;
+       }
